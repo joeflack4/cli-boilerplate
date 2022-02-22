@@ -3,6 +3,7 @@
 """Command Line Interface."""
 from argparse import ArgumentParser
 from sys import stderr
+from typing import Dict
 
 from project_name.definitions.error import PackageException
 from project_name.project_name import run
@@ -44,9 +45,8 @@ def cli():
     kwargs = parser.parse_args()
 
     try:
-        run(arg1=kwargs.arg1,
-            arg2=kwargs.arg1,
-            outpath=kwargs.outpath)
+        kwargs_dict: Dict = vars(kwargs)
+        run(**kwargs_dict)
     except PackageException as err:
         err = 'An error occurred.\n\n' + str(err)
         print(err, file=stderr)

@@ -1,3 +1,2 @@
-Put your project requirements here, unversioned unless necessary.
-
-`pip install -r requirements-unlocked.txt`
+# Put your project requirements here, unversioned unless necessary.
+# `pip install -r requirements-unlocked.txt`

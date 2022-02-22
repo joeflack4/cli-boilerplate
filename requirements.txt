@@ -1,4 +1,2 @@
-After installing requirements-unlocked.txt, put all versioned dependencies
-in this file.
-
-`pip freeze > requirements.txt`
+# After installing requirements-unlocked.txt, put all versioned dependencies in this file.
+# `pip freeze > requirements.txt`
